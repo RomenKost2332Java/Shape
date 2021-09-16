@@ -6,10 +6,10 @@ public class Triangle extends Shape {
     private Point thirdPoint;
 
     public Triangle(Point firstPoint, Point secondPoint, Point thirdPoint) throws IllegalArgumentException {
-        checkPoints();
         this.firstPoint = firstPoint;
         this.secondPoint = secondPoint;
         this.thirdPoint = thirdPoint;
+        checkPoints();
     }
 
     public Triangle(double x1, double y1, double x2, double y2, double x3, double y3) throws IllegalArgumentException {
